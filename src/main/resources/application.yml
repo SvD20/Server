@@ -1,0 +1,32 @@
+server:
+  port: 8081
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://host.docker.internal:7000/eureka/
+spring:
+  application:
+    name: web-service
+  profiles:
+    active: prod
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+      dialect: org.hibernate.dialect.MySQL8Dialect
+  datasource:
+    url: jdbc:mysql://host.docker.internal:3306/bpb
+    username: root
+    password: root
+management:
+  server:
+    port: 8081
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+       include: '*'

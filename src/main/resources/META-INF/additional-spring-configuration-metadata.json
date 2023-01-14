@@ -1,0 +1,18 @@
+{
+  "properties": [
+    {
+      "name": "spring.show-sql",
+      "type": "java.lang.String",
+      "description": "Description for spring.show-sql."
+    },
+    {
+      "name": "spring.hibernate.ddl-auto",
+      "type": "java.lang.String",
+      "description": "Description for spring.hibernate.ddl-auto."
+    },
+    {
+      "name": "spring.jpa",
+      "type": "java.lang.String",
+      "description": "Description for spring.jpa."
+    }
+  ] }
